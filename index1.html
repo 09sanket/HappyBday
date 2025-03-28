@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Love ❤️</title>
+    <link rel="stylesheet" href="./style1.css">
+    
+</head>
+<body>
+    <div class="confetti-container"></div> <!-- Confetti Background -->
+    
+    <div class="container">
+        <div class="envelope-wrapper">
+            <div class="envelope">
+                <div class="letter">
+                    <div class="text">
+                        <strong>❤️ Dear Love, ❤️</strong>
+                        <p>
+                            🌸 Happy Birthday, My Love! 🌸  
+                            On this special day, I just want to remind you how incredibly special you are to me.  
+                            You fill my life with love, happiness, and countless beautiful moments. Your smile  
+                            lights up my world, and your love makes everything feel perfect.  
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="heart"></div>
+        </div>
+    </div>
+
+    <!-- Next Page Button -->
+    <div class="btn-container">
+        <button class="btn" onclick="goToNextPage()"><span>Next Page</span></button>
+    </div>
+
+    <script>
+        const envelope = document.querySelector('.envelope-wrapper');
+        envelope.addEventListener('click', () => {
+            envelope.classList.toggle('flap');
+        });
+
+        function goToNextPage() {
+            window.location.href = "index2.html"; // Replace with your next page URL
+        }
+    </script>
+</body>
+</html>
